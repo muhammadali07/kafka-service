@@ -6,7 +6,7 @@ def create_consumer(topic):
 
 def consume_messages(consumer):
     for message in consumer:
-        print(f"received message: {message.value}")
+        print(f"received messages: {message.value}")
 
 if __name__ == '__main__':
     topic = 'test'
