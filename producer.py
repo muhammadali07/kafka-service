@@ -7,7 +7,7 @@ def create_producer():
 
 def send_message(producer, topic):
     for i in range(5):
-        message = {'event': f'event {i}', 'descriptino': f'description {i}'}
+        message = {'event': f'events {i}', 'descriptino': f'description {i}'}
         producer.send(topic, message)
         time.sleep(1) # sleep for 1 second (jeda waktu 1 detik)
 
